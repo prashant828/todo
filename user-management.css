@@ -1,0 +1,43 @@
+.outer-div{
+    margin: auto;
+    width: 30%;
+    background: skyblue;
+    padding: 10px;
+    border-radius: 10px
+}
+
+.input-div{
+    text-align: center;
+    margin: 10px
+}
+
+.user-row{
+    padding: 5px
+}
+
+.user{
+    display: inline-block;
+    width: 65%
+}
+
+.edit-user, .delete-user{
+    margin: 5px
+}
+
+input{
+    border: none;
+    height: 20px;
+    background: rgb(245, 245, 245);
+    border-radius: 5px;
+    padding: 5px
+}
+
+button{
+    height: 28px;
+    background: rgb(33, 99, 221);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    cursor: pointer;
+}
