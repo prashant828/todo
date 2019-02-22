@@ -1,6 +1,6 @@
 .outer-div{
     margin: auto;
-    width: 30%;
+    width: 45%;
     background: skyblue;
     padding: 10px;
     border-radius: 10px
@@ -38,6 +38,23 @@ button{
     color: white;
     border: none;
     border-radius: 5px;
-    width: 50px;
     cursor: pointer;
+    padding: 5px 10px;
+    margin: 10px 5px 5px 0px;
+}
+
+h2{
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0;
+    color: rgb(255, 255, 255)
+}
+
+.dashboard{
+    display: none
+}
+
+label{
+    color: white;
+    font-family: sans-serif
 }

@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title></title>
     <link rel="stylesheet" href="user-management.css">
 </head>
+
 <body>
-    <div class="outer-div">
-        <div class="input-div">
-                <input type="text" id="enter-user">
-                <button id='save-user' type="button">Save</button>
-        </div>
-        <div class="list-div">
+    <div class="login">
+        <div class="outer-div">
+            <h2>Login</h2>
+            <div class="input-div">
+                <label for="user">User Name:</label>
+                <input type="text" id="user">
+                <label for="password">Password:</label>
+                <input type="text" id="password">
+                <div class="btn-div">
+                    <button id='register' type="button">Register</button>
+                    <button id='login' type="button">Login</button>
+                </div>
+            </div>
         </div>
     </div>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>    
-<script type="text/javascript" src="user-management.js"></script>
+    <div class="dashboard">
+        <div class="outer-div">
+            <h2>User Management</h2>
+            <div class="input-div">
+                <input type="text" id="enter-user">
+                <button id='save-user' type="button">Save</button>
+            </div>
+            <div class="list-div">
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="user-management.js"></script>
 </body>
+
 </html>
