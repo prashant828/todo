@@ -13,7 +13,7 @@ $(function () {
         }
     }
 
-    populateUsers()
+    populateUsers();
     const addToLocalStorage = (data) => {
         localStorage.users = JSON.stringify(data)
     }
@@ -38,7 +38,7 @@ $(function () {
         }
     }
 
-    $('#save-user').on('click', () => {
+    $(document).on('click', '#save-user', function(){
         let name = $('#enter-user').val().trim();
         if (name) {
             userOperations(name, 'add')
@@ -49,5 +49,20 @@ $(function () {
        let name = $(this).siblings('.user').text();
        userOperations(name, 'delete')
     });
-    
+
+    $(document).on('click', '.edit-user', function(){
+      $('#save-user').attr('id', 'update-user').text('Update User');
+      let name = $(this).siblings('.user').text();
+      let index = currentUsers.findIndex(user=>user===name)
+      $('#enter-user').attr('data', index).val(name);
+    })
+
+    $(document).on('click', '#update-user', function(){
+      let index = $('#enter-user').attr('data');
+      currentUsers[index] = $('#enter-user').val();
+      $('#update-user').attr('id', 'save-user' ).text('Save');
+      addToLocalStorage(currentUsers);
+      populateUsers()
+    })
+
 })
